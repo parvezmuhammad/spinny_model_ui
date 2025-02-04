@@ -4,25 +4,27 @@ import './index.css';
 import EmiCalculator from './EmiCalculator';
 import carData from '../carData';
 
-
-const CarDetailsGallery = () => {
+const CarDetailsGallery = ({ selectedCarId }) => {
   const [activeThumbnailId, setActiveThumbnailId] = useState(0);
 
-  const { imageUrl, imageAltText } = carData[0].images[activeThumbnailId]; // Access the selected image from the nested images
+  // Find the selected car based on the selectedCarId
+  const selectedCar = carData.find((car) => car.id === selectedCarId);
+
+  const { imageUrl, imageAltText } = selectedCar.images[activeThumbnailId];
 
   const handleNextImage = () => {
-    setActiveThumbnailId((prevId) => (prevId + 1) % carData[0].images.length);
+    setActiveThumbnailId((prevId) => (prevId + 1) % selectedCar.images.length);
   };
 
   const handlePreviousImage = () => {
     setActiveThumbnailId(
-      (prevId) => (prevId - 1 + carData[0].images.length) % carData[0].images.length
+      (prevId) => (prevId - 1 + selectedCar.images.length) % selectedCar.images.length
     );
   };
 
   const ThumbnailItem = ({ imageDetails, isActive, setActiveThumbnailId }) => {
     const { imageUrl, imageAltText, id } = imageDetails;
-    const thumbnailClassName = isActive ? `thumbnail active` : `thumbnail`;
+    const thumbnailClassName = isActive ? 'thumbnail active' : 'thumbnail';
 
     const onClickThumbnail = () => {
       setActiveThumbnailId(id);
@@ -47,7 +49,7 @@ const CarDetailsGallery = () => {
               className="arrow-button left-arrow"
               onClick={handlePreviousImage}
             >
-              &larr; {/* Left Arrow */}
+              &larr;
             </button>
             <img src={imageUrl} className="selected-image" alt={imageAltText} />
             <button
@@ -55,12 +57,12 @@ const CarDetailsGallery = () => {
               className="arrow-button right-arrow"
               onClick={handleNextImage}
             >
-              &rarr; {/* Right Arrow */}
+              &rarr;
             </button>
           </div>
 
           <ul className="thumbnails-list">
-            {carData[0].images.map((eachImage, index) => (
+            {selectedCar.images.map((eachImage, index) => (
               <ThumbnailItem
                 key={eachImage.imageAltText}
                 imageDetails={{ ...eachImage, id: index }}
@@ -71,7 +73,7 @@ const CarDetailsGallery = () => {
           </ul>
         </div>
         <div className="cardetails-card">
-          <CarDetailsCard />
+          <CarDetailsCard selectedCarId={selectedCarId} />
         </div>
       </div>
       <EmiCalculator />

@@ -17,7 +17,7 @@ function App() {
   const [selectedZone, setSelectedZone] = useState("Zone") // Track selected Zone
   const [selectedState, setSelectedState] = useState("State") // New state for selected state
   const [isStateOpen, setIsStateOpen] = useState(false) // New state for state dropdown visibility
-
+  const [selectedCarId, setSelectedCarId] = useState(0); // Default to the first car
   // Ref for the Zone dropdown container
   const zoneDropdownRef = useRef(null)
 
@@ -151,13 +151,13 @@ function App() {
       </div>
       <div className="right-container">
         <h2 className="car-count-heading"><span>524 </span>Used Cars in <span>Hyderabad</span></h2>
-      <AllCarsCard />
+      <AllCarsCard setSelectedCarId={setSelectedCarId}/>
     </div>
     </div>
 
 
     <div className="car-detailed-container">
-         <CarDetailsGallery/>
+         <CarDetailsGallery selectedCarId={selectedCarId}/>
     </div>
 
     </div>

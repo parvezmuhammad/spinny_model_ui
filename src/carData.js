@@ -443,7 +443,7 @@ const carData = [
       Reg_num:'TS04UD1234',
       reg_year:2023,
       transmission: 'Manual',
-      fuel: "Electric",
+      fuel: "Cng",
       km: "10,000",
       ownership:1,
       insurance_expiry: "24/12/2038",
@@ -491,16 +491,16 @@ const carData = [
       dealer_code:12145,
       name: "Hyundai Tucson",
       price: "₹50 Lakh",
-      year: 2022,
+      year: 2021,
       engine_capacity:'999cc',
       owner: '2nd Owner',
       Reg_num:'TS04UD1234',
       reg_year:2023,
       transmission: 'Manual',
-      fuel: "Electric",
-      km: "10,000",
-      ownership:1,
-      insurance_expiry: "24/12/2038",
+      fuel: "Petrol",
+      km: "18000",
+      ownership:3,
+      insurance_expiry: "24/12/2039",
       images: [
         {
           imageUrl:
@@ -550,11 +550,11 @@ const carData = [
       owner: '2nd Owner',
       Reg_num:'TS04UD1234',
       reg_year:2023,
-      transmission: 'Manual',
+      transmission: 'Automatic',
       fuel: "Electric",
-      km: "10,000",
-      ownership:1,
-      insurance_expiry: "24/12/2038",
+      km: "44,000",
+      ownership:2,
+      insurance_expiry: "24/12/2036",
       images: [
         {
           imageUrl:
@@ -603,12 +603,12 @@ const carData = [
       engine_capacity:'999cc',
       owner: '2nd Owner',
       Reg_num:'TS04UD1234',
-      reg_year:2023,
+      reg_year:2020,
       transmission: 'Manual',
-      fuel: "Electric",
-      km: "10,000",
+      fuel: "Cng",
+      km: "17,000",
       ownership:1,
-      insurance_expiry: "24/12/2038",
+      insurance_expiry: "24/12/2037",
       images: [
         {
           imageUrl:
