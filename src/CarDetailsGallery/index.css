@@ -1,0 +1,107 @@
+.car-and-emi-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    overflow-y: hidden;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 25px;
+  }
+  
+  .image-navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  .selected-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  
+  .thumbnails-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+    overflow-x: auto;
+  }
+  
+  .thumbnail-list-item {
+    flex: 0 0 auto;
+  }
+  
+  .thumbnail-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
+  
+  .thumbnail.active {
+    opacity: 1;
+  }
+  
+  .cardetails-card {
+    flex: 1;
+    padding: 25px;
+  }
+  
+  .emi-calculator-container {
+    width: 100%;
+    padding: 0 25px 25px;
+  }
+  
+  

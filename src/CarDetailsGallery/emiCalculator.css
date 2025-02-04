@@ -1,0 +1,175 @@
+/* Main Container */
+.emi-calculator {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+   
+
+  }
+  
+  /* Content Container */
+  .emi-calculator__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Sliders Container */
+  .emi-calculator__sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Slider Group */
+  .emi-calculator__slider-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  /* Slider Header */
+  .emi-calculator__slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+  }
+  
+  /* Slider Label */
+  .emi-calculator__slider-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  /* Slider Value */
+  .emi-calculator__slider-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e31b54;
+  }
+  
+  /* Slider Range Labels */
+  .emi-calculator__slider-range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #b6b0b0;
+
+  }
+  
+  /* Result Section */
+  .emi-calculator__result {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 16px;
+    border: 1px solid #eeeeee;
+    background-color: #c9c5c5;
+    height: auto;
+    border-radius:10px ;
+
+  }
+  
+  /* Result Header */
+  .emi-calculator__result-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    width: 180px;
+    border-radius: 15px;
+  }
+  
+  /* Result Label */
+  .emi-calculator__result-label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin-left: 10px;
+
+  }
+  
+  /* Result Value */
+  .emi-calculator__result-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e31b54;
+   
+  }
+  
+  /* Material-UI Slider Custom Styles */
+  .emi-calculator__slider .MuiSlider-root {
+    color: #37353b; /* Slider active color */
+  }
+  
+  .emi-calculator__slider .MuiSlider-rail {
+    background-color: #dfdada; /* Slider inactive track color */
+    height: 4px; /* Rail height */
+  }
+  
+  .emi-calculator__slider .MuiSlider-track {
+    background-color: #37353b; /* Slider active track color */
+    height: 4px; /* Track height */
+  }
+  
+  .emi-calculator__slider .MuiSlider-thumb {
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background-color: #e31b54; /* Thumb color */
+    border: 2px solid #e31b54; /* Thumb border */
+  }
+  
+  .emi-calculator__slider .MuiSlider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(227, 27, 84, 0.1); /* Hover effect */
+  }
+  
+  .emi-calculator__slider .MuiSlider-thumb.Mui-focusVisible {
+    box-shadow: 0 0 0 2px rgba(227, 27, 84, 0.2); /* Focus effect */
+  }
+  
+  .emi-calculator__slider .MuiSlider-thumb.Mui-active {
+    box-shadow: 0 0 0 8px rgba(227, 27, 84, 0.2); /* Active effect */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 640px) {
+    .emi-calculator__content {
+      padding: 10px;
+    }
+  
+    .emi-calculator__sliders {
+      gap: 15px;
+    }
+  
+    .emi-calculator__result-value {
+      font-size: 16px;
+    }
+  }
+ 
+.emi-container{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: flex-start;
+    padding-left: 25px;
+}
+
+.callback-button{
+    background-color: #e31b54;
+    color: white;
+    border-radius: 5px;
+    border: none ;
+    padding: 12px;
+    margin: 5px;
+}
+.callback-button:hover{
+    background-color: #cc1247;
+    cursor: pointer;
+   
+}

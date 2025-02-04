@@ -1,0 +1,103 @@
+.car-and-emi-card-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.modelname-and-dealer-code-heading{
+	font-size: 16px;
+	font-weight: bold;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    border-radius: 5px;
+    font-family: 'font-book';
+    margin-bottom: 5px;
+}
+.car-details-container{
+    width: 100%;
+    margin-top: 25px;
+    height: auto;
+    border: 1px solid rgb(216, 205, 205);
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  
+
+}
+.car-details-span{
+    margin: 2px;
+    font-size: 14px;
+}
+.heading-container{
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.three-items-container{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+
+}
+.fuel-icon-container{
+    margin-right: 10px;
+
+}
+.first-line-three-items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+}
+.Fuel-type-heading{
+    font-size: 14px;
+    opacity: 0.8;
+    font-family: 'font-book';
+}
+.features-para{
+    opacity: 0.5;
+    font-size: 12px;
+    font-family: 'font-book';
+}
+.enquiry-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.evaluation-button{
+    background-color: rgb(221, 97, 97);
+    color: #fff;
+    font-family: 'font-book';
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 40%;
+}
+.evaluation-button:hover{
+    background-color: rgb(177, 71, 71);
+    cursor: pointer;
+}
+.enquiry-button{
+    background-color: rgb(127, 114, 241);
+    color: #fff;
+    font-family: 'font-book';
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 35%;
+}
+.enquiry-button:hover{
+    background-color: rgb(100, 87, 216);
+    cursor: pointer;
+}

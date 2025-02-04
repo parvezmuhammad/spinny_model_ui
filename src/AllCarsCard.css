@@ -1,0 +1,97 @@
+
+  /* Cars Container Styles */
+  .cars-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 12px;
+    padding: 8px;
+ 
+  }
+
+  
+  .car-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  .car-card:hover{
+    transform: scale(1.03);
+    
+  }
+  .car-container-text-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  .right-para{
+    width: 80%;
+    font-size: 14px;
+    padding: 5px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin: 1px;
+    color: #333;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(197, 245, 242, 0.7), rgba(255, 255, 255, 0.1));
+    box-shadow: 0 0 15px rgba(241, 192, 192, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 45px rgba(255, 255, 255, 0.3); /* Shiny glowing effect */
+  }
+  .owner-para{
+    width: 90%;
+    font-size: 10px;
+    padding: 5px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin: 1px;
+    color: #333;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(197, 245, 242, 0.7), rgba(255, 255, 255, 0.1));
+    box-shadow: 0 0 15px rgba(241, 192, 192, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 45px rgba(255, 255, 255, 0.3); /* Shiny glowing effect */
+  
+  }
+  .car-right{
+    padding: 5px;
+    
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .car-details {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  .car-name {
+    margin: 3px;
+    font-size: 1.2rem;
+  }
+  
+  .car-price,
+  .car-year,
+  .car-fuel,
+  .car-km,
+  .car-insurance {
+    margin: 2px 0;
+    color: #333;
+    font-size: 14px;
+  }
+  .car-enquiry-button{
+    background-color: rgb(243, 75, 75);
+    width: 100%;
+    border: rgb(170, 63, 63);
+    border-radius: 10px;
+    margin-top: 5px;
+    color: #fff;
+    padding: 2px;
+  }
+  .car-enquiry-button:hover{
+    cursor: pointer;
+    background-color: rgb(238, 55, 55);
+  }
